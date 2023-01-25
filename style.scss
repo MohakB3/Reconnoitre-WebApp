@@ -1,0 +1,230 @@
+.header {
+    color: #E4FDE1;
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    margin-top: 43%;
+    font-size: 120%;
+    text-align: center;
+    position: absolute;
+    background-color: #E4FDE1;
+    font-family: 'Barlow', sans-serif;
+}
+
+.main_body {
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+}
+
+.main_body h1{
+    font-size: 300%;
+}
+
+input[type=text] {
+    width: 20%;
+    margin: 5px;
+    margin: 8px 0;
+    outline: none;
+    color: white;
+    font-size: 200%;
+    transition: 0.5s;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    background-color: #3A3335;
+    border: 3px solid #C6D8D3;
+    font-family: 'Major Mono Display', monospace;
+}
+
+input[type=text]:focus {
+    border: 3px solid #D81E5B;
+  }
+
+body {
+    background-color: black;
+}
+
+:root {
+--background-color: #000000;
+--color: #000000;
+--light-theme: #ffffff;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}
+
+.btn {
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 220px;
+height: 60px;
+
+background-color: var(--light-theme);
+cursor: pointer;
+font-size: 24px;
+color: var(--color);
+transition: all 0.3s;
+position: relative;
+
+text-align: center;
+overflow: hidden;
+
+border-radius: 5px;
+box-shadow: 0 6px 30px -10px rgba(#cccccc, 1);
+
+&:hover {
+    transform: translateX(5px) translateY(-7px);
+}
+}
+
+.shop-now {
+position: relative;
+.santa-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -17px;
+    right: -20px;
+    transform: rotate(14deg);
+    img {
+    width: 100%;
+    height: 100%;
+    }
+}
+}
+
+.snowflake-grid {
+display: inline-grid;
+grid-template-columns: 1fr 1fr;
+grid-auto-rows: 50px;
+gap: 5px;
+
+width: 100px;
+transform: scale(0.4);
+div {
+    border-radius: 5px;
+}
+
+.snowflake-item {
+    position: relative;
+}
+}
+
+.to-left {
+position: absolute;
+top: -4px;
+left: -35px;
+animation: swing 3s infinite;
+div {
+    animation: flash 3s infinite;
+}
+}
+
+.to-right {
+position: absolute;
+top: -25px;
+right: -35px;
+animation: swing 2.5s infinite;
+div {
+    animation: flash 2.5s infinite;
+}
+}
+
+.border-left {
+border-left: 4px solid #e6dada;
+}
+
+.border-right {
+border-right: 4px solid #e6dada;
+}
+
+.border-bottom {
+border-bottom: 4px solid #e6dada;
+}
+
+.border-top {
+border-top: 4px solid #e6dada;
+}
+
+.sub-items {
+height: 28px;
+width: 28px;
+}
+
+.m-w-15 {
+width: 15px;
+}
+
+.m-h-15 {
+height: 15px;
+}
+
+.r-270 {
+transform: rotate(270deg);
+}
+
+.r-180 {
+transform: rotate(180deg);
+}
+
+.r-90 {
+transform: rotate(90deg);
+}
+
+.pull-down {
+position: absolute;
+bottom: 5px;
+right: 5px;
+}
+
+.pull-down-right {
+position: absolute;
+bottom: 5px;
+left: 5px;
+}
+
+.pull-right {
+position: absolute;
+right: 5px;
+top: 5px;
+}
+
+.pull-left {
+position: absolute;
+left: 5px;
+top: 5px;
+}
+
+.m-3 {
+margin: 3px;
+}
+
+@keyframes swing {
+50% {
+    transform: rotateZ(10deg) scale(0.4);
+}
+}
+
+@keyframes flash {
+50% {
+    border-color: #485563;
+}
+}
