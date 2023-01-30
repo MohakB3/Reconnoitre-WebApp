@@ -1,6 +1,6 @@
 function validateInput() {
     $.ajax({
-        url: "https://52.15.145.92:4906/",
+        url: "http://ec2-13-58-11-61.us-east-2.compute.amazonaws.com:4906/",
         dataType: "jsonp", // jsonp
         type: "POST",
         jsonpCallback: 'processJSONPResponse', // add this property
